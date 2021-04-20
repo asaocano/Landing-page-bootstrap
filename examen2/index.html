@@ -1,165 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <title>Agencia de viajes</title>
-    <style></style>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Destinos</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                aria-expanded="false"
-              >
-                Paquetes
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"
-                >Ayuda</a
-              >
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="text"
-              placeholder="Usuario"
-              aria-label="Username"
-            />
-            <input
-              class="form-control me-2"
-              type="password"
-              placeholder="Contraseña"
-              aria-label="Password"
-            />
-            <button class="btn btn-outline-primary" type="submit">
-              Entrar
-            </button>
-          </form>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <title>Agencia de viajes</title>
+  <style></style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="img/logo.png" alt="" /></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#"><i class="fas fa-home"> </i>Inicio</i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fas fa-plane"></i> Destinos</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+              <i class="fas fa-box-open"></i> Paquetes
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><i class="fas fa-question"></i> Ayuda</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Usuario" aria-label="Username" />
+          <input class="form-control me-2" type="password" placeholder="Contraseña" aria-label="Password" />
+          <button class="btn btn-outline-primary" type="submit">
+            Entrar
+          </button>
+        </form>
       </div>
-    </nav>
-    <div class="jumbotron">
-      <h1 class="display-4">¡Tu siguiente gran aventura está aquí!</h1>
-      <p class="lead">
-        Visita lugares increíbles alrededor de todo el mundo y vive experiencias
-        inolvidables
-      </p>
-      <hr class="my-4" />
-      <br class="my-4" />
-      <br class="my-4" />
-      <p class="secundario">
-        Lo único que necesitas es tu cámara, tu pasaporte y una cuenta
-      </p>
-      <a class="btn btn-success btn-lg" href="#" role="button">¡Comencemos!</a>
     </div>
-  </body>
-  <h2>Nuestros destinos</h2>
-  <div class="container">
-    <div class="cards row">
-      <div class="card col-sm" style="width: 18rem">
-        <img src="img/populares1.jpg" class="card-img-top" alt="Austria" />
-        <div class="card-body">
-          <h5 class="card-title">Austria</h5>
-          <p class="card-text">
-            Visita el Palacio de Belvedere, pasea el Río Danubio en bicicleta, o
-            admira la belleza de la torre Martinsturm.
-          </p>
-        </div>
+  </nav>
+  <div class="jumbotron">
+    <h1 class="display-4">¡Tu siguiente gran aventura está aquí!</h1>
+    <p class="lead">
+      Visita lugares increíbles alrededor de todo el mundo y vive experiencias
+      inolvidables
+    </p>
+    <hr class="my-4" />
+    <br class="my-4" />
+    <br class="my-4" />
+    <p class="secundario">
+      Lo único que necesitas es tu cámara, tu pasaporte y una cuenta
+    </p>
+    <a class="btn btn-success btn-lg" href="#" role="button">¡Comencemos!</a>
+  </div>
+</body>
+<h2>¿Por qué elegirnos?</h2>
+<div class="container descripcion">
+  <p>
+    Somos más que una agencia de viajes. Nos dedicamos a crear una experiencia de viaje única, aún mejor de lo que
+    imaginaste. Ponemos siempre a tu entera disposición nuestra asesoría y respaldo para que goces de una experiencia
+    sin riesgos.
+  </p>
+  <br>
+  <p>¡Suscríbete a nuestro newsletter para recibir las últimas novedades!</p>
+  <form class="form-inline newsletter">
+    <label class="sr-only" for="inlineFormInputName2">Name</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Nombre completo">
+    <label class="sr-only" for="inlineFormInputGroupUsername2">Correo electrónico</label>
+    <div class="input-group mb-2 mr-sm-2">
+      <div class="input-group-prepend">
+        <div class="input-group-text">@</div>
       </div>
-      <div class="card col-sm" style="width: 18rem">
-        <img src="img/populares2.jpg" class="card-img-top" alt="Francia" />
-        <div class="card-body">
-          <h5 class="card-title">Francia</h5>
-          <p class="card-text">
-            Sube a la Torre Eiffel, consigue tu foto en el Arco del Triunfo, o
-            visita la Catedral de Notre Dame.
-          </p>
-        </div>
+      <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Correo electrónico">
+    </div>
+    <button type="submit" class="btn btn-success mb-2">Suscribirme</button>
+  </form>
+</div>
+<h2>Nuestros destinos</h2>
+<div class="container">
+  <div class="cards row">
+    <div class="card col-sm" style="width: 18rem">
+      <img src="img/populares1.jpg" class="card-img-top" alt="Austria" />
+      <div class="card-body">
+        <h5 class="card-title">Austria 🇦🇹</h5>
+        <p class="card-text">
+          Visita el Palacio de Belvedere, pasea el Río Danubio en bicicleta, o
+          admira la belleza de la torre Martinsturm.
+        </p>
       </div>
-      <div class="card col-sm" style="width: 18rem">
-        <img src="img/populares3.jpg" class="card-img-top" alt="Grecia" />
-        <div class="card-body">
-          <h5 class="card-title">Grecia</h5>
-          <p class="card-text">
-            Visita la ciudad de Atenas, pasea en bicicleta por Naxos, o viaja a
-            la Isla de Creta.
-          </p>
-        </div>
+    </div>
+    <div class="card col-sm" style="width: 18rem">
+      <img src="img/populares2.jpg" class="card-img-top" alt="Francia" />
+      <div class="card-body">
+        <h5 class="card-title">Francia 🇫🇷</h5>
+        <p class="card-text">
+          Sube a la Torre Eiffel, consigue tu foto en el Arco del Triunfo, o
+          visita la Catedral de Notre Dame.
+        </p>
       </div>
-      <div class="card col-sm" style="width: 18rem">
-        <img src="img/populares4.jpg" class="card-img-top" alt="Inglaterra" />
-        <div class="card-body">
-          <h5 class="card-title">Inglaterra</h5>
-          <p class="card-text">
-            Presencia la ceremonia de las Llaves en la Torre de Londres, acude
-            al zoológico de Chester o toma un crucero en Windermere.
-          </p>
-        </div>
+    </div>
+    <div class="card col-sm" style="width: 18rem">
+      <img src="img/populares3.jpg" class="card-img-top" alt="Grecia" />
+      <div class="card-body">
+        <h5 class="card-title">Grecia 🇬🇷</h5>
+        <p class="card-text">
+          Visita la ciudad de Atenas, pasea en bicicleta por Naxos, o viaja a
+          la Isla de Creta.
+        </p>
+      </div>
+    </div>
+    <div class="card col-sm" style="width: 18rem">
+      <img src="img/populares4.jpg" class="card-img-top" alt="Inglaterra" />
+      <div class="card-body">
+        <h5 class="card-title">Inglaterra 🇬🇧</h5>
+        <p class="card-text">
+          Presencia la ceremonia de las Llaves en la Torre de Londres, acude
+          al zoológico de Chester o toma un crucero en Windermere.
+        </p>
       </div>
     </div>
   </div>
+</div>
+<div class="container appstore">
+  <p>¡Llévanos contigo en tu bolsillo!</p>
+  
+</div>
+
 </html>
